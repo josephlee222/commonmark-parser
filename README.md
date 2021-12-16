@@ -1,3 +1,3 @@
 ## CommonmarkParser
 
-An App Inventor 2 extension created using Rush.
+Commonmark (Markdown) parser for App Inventor 2 and its clones. More updates and docs coming soon.
