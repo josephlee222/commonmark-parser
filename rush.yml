@@ -3,7 +3,7 @@
 
 ---
 name: CommonmarkParser
-description: Extension component for CommonmarkParser. Created using Rush.
+description: A simple Markdown parser for App Inventor 2 and its clones.
 
 version:
   number: auto
@@ -30,5 +30,6 @@ assets:
   #   - my_awesome_asset.anything
 
 # Extension dependencies (JAR).
-# deps:
-#   - my_awesome_library.jar
+deps:
+  - commonmark-0.18.1.jar
+  - commonmark-ext-ins-0.18.1.jar
