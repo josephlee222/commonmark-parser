@@ -10,6 +10,7 @@ import org.commonmark.ext.ins.InsExtension;
 import org.commonmark.node.*;
 import org.commonmark.parser.Parser;
 import org.commonmark.renderer.html.HtmlRenderer;
+import io.github.furstenheim.CopyDown;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,5 +28,12 @@ public class CommonmarkParser extends AndroidNonvisibleComponent {
     Node document = parser.parse(Markdown);
     HtmlRenderer htmlRenderer = HtmlRenderer.builder().extensions(extensions).build();
     return htmlRenderer.render(document);
+  }
+
+  @SimpleFunction(description = "Converts HTML into Markdown formatted text")
+  public String ConvertHtmlToMarkdown(String Html) {
+    CopyDown converter = new CopyDown();
+    String markdown = converter.convert(Html);
+    return markdown;
   }
 }
