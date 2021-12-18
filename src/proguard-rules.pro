@@ -13,3 +13,4 @@
 -repackageclasses 'com/memelabs/commonmarkparser/repack'
 -flattenpackagehierarchy
 -dontpreverify
+-dontwarn

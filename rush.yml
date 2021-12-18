@@ -7,7 +7,7 @@ description: A simple Markdown parser for App Inventor 2 and its clones.
 
 version:
   number: auto
-  name: '0.0.1'
+  name: '1.0.0'
 
 authors:
   - Joseph Lee
@@ -33,3 +33,5 @@ assets:
 deps:
   - commonmark-0.18.1.jar
   - commonmark-ext-ins-0.18.1.jar
+  - copy_down-1.0.jar
+  - jsoup-1.14.3.jar
