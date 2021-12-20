@@ -7,7 +7,7 @@ description: A simple Markdown parser for App Inventor 2 and its clones.
 
 version:
   number: auto
-  name: '1.0.0'
+  name: '1.0.1'
 
 authors:
   - Joseph Lee
@@ -19,8 +19,8 @@ build:
 
   # If enabled, you will be able to use Java 8 language features in your extension.
   desugar:
-    enable: false
-    desugar_deps: false
+    enable: true
+    desugar_deps: true
 
 assets:
   # Extension icon. This can be a URL or a local image in 'assets' folder.
