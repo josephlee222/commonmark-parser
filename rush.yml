@@ -7,7 +7,7 @@ description: A simple Markdown parser for App Inventor 2 and its clones.
 
 version:
   number: auto
-  name: '1.0.1'
+  name: '1.0.2'
 
 authors:
   - Joseph Lee

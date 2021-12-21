@@ -22,18 +22,18 @@ public class CommonmarkParser extends AndroidNonvisibleComponent {
   }
 
   @SimpleFunction(description = "Converts markdown formatted text into HTML")
-  public String ConvertMarkdownToHtml(String Markdown) {
+  public String ConvertMarkdownToHtml(String markdown) {
     List<Extension> extensions = Arrays.asList(InsExtension.create());
     Parser parser = Parser.builder().extensions(extensions).build();
-    Node document = parser.parse(Markdown);
+    Node document = parser.parse(markdown);
     HtmlRenderer htmlRenderer = HtmlRenderer.builder().extensions(extensions).build();
     return htmlRenderer.render(document);
   }
 
   @SimpleFunction(description = "Converts HTML into Markdown formatted text")
-  public String ConvertHtmlToMarkdown(String Html) {
+  public String ConvertHtmlToMarkdown(String html) {
     CopyDown converter = new CopyDown();
-    String markdown = converter.convert(Html);
+    String markdown = converter.convert(html);
     return markdown;
   }
 }
